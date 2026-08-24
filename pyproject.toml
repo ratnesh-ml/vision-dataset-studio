@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vision-dataset-studio"
+version = "0.1.0"
+description = "Data-centric image dataset quality and human review workflow"
+requires-python = ">=3.10"
+dependencies = ["Pillow>=10.0", "numpy>=1.24", "fastapi>=0.110", "uvicorn>=0.29"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+vision-studio = "vision_studio.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
