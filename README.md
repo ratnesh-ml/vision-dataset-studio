@@ -1,5 +1,7 @@
 # Vision Dataset Studio
 
+[![CI](https://github.com/ratnesh-ml/vision-dataset-studio/actions/workflows/test.yml/badge.svg)](https://github.com/ratnesh-ml/vision-dataset-studio/actions/workflows/test.yml)
+
 Vision Dataset Studio is a data-centric computer-vision app that audits an
 image folder before model training. It creates a manifest, measures image
 dimensions, brightness, contrast, and a lightweight blur proxy, groups exact
@@ -50,6 +52,12 @@ The blur score is a simple variance-of-gradient proxy, not a learned quality
 model. The duplicate detector catches exact duplicates but not near-duplicates.
 Next steps include perceptual hashing, class-balance checks, label audits,
 embedding-based outlier review, and a small browser labeling surface.
+
+
+## Contribution and verification
+
+The repository includes contributor guidance in [`CONTRIBUTING.md`](CONTRIBUTING.md). GitHub Actions compiles the source and runs the test suite on every push and pull request. Use synthetic or permission-cleared images only.
+
 
 ## License
 
