@@ -1,0 +1,24 @@
+name: Dataset audit bug
+description: Report a reproducible image-audit, duplicate-detection, manifest, review-queue, API, or documentation issue.
+title: "bug: "
+body:
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed audit behavior
+      description: Include the command, safe sample metadata, and the produced audit result.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Data safety
+      options:
+        - label: I did not upload or attach private images, personal data, or credentials.
+          required: true
